@@ -3,37 +3,4 @@ This repository contains a collection of small scripts written in R and python, 
 
 Refer here for my full CV:
 
->basic markdown experimentation
 
-love my BG<sup>3</sup> ~~girls~~ *women*, we'll go back to the [motherland](https://www.youtube.com/watch?v=HDrCvMnY6p0) soon. 
-
-![beautiful Sofia](https://ceoworld.biz/wp-content/uploads/2023/05/Bulgaria.jpg)
-
-can make a link with ctrl+k shortcut
-
-a relative link [other link in the repo or git environment](hello-world/relative-file.md)
-
-***all bold and italised***
-
-making a list of fruits
-- apples
-* oranges
-  * tangerines
-+ pears
-
-making list of:
-1. veggies
-  - celery
-  - cucumber
-      - persian
-      - english
-
-task lists :+1::
-- [ ] finish this document
-- [ ] rename from hello world to markdown
-- [x] \(optional) make espresso
-
-mentioning people and teams:
-@github/support what do you think of this :shipit:?
-
-see [here](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md) for the emoji cheat sheet
