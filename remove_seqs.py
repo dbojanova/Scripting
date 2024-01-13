@@ -27,7 +27,7 @@ headers = set(line.strip() for line in open(sys.argv[2]))
 
 #parse through all the sequences and remove any with a header matching the inputted headers to be removed
 for seqs in SeqIO.parse(sys.argv[1], "fasta"):
-  if seqs.name not in headers:
+  if seqs.id not in headers:
     SeqIO.write(seqs, args.out, "fasta")
   try:
       headers.remove(seqs.name)
