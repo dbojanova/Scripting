@@ -5,11 +5,13 @@ import sys
 import argparse
 
 #help file that deliniates required arguments
-parser = argparse.ArgumentParser(description='Enter a list of headers to remove and a fasta file to remove them from.')
-parser.add_argument('--headers', required=True, help='file of headers to remove')
-parser.add_argument('--input', required=True, help='file of fasta sequences')
-parser.add_argument('--out', required=True, help='file of results')
-args=parser.parse_args()
+def create_parser():
+  parser = argparse.ArgumentParser(description='Enter a list of headers to remove and a fasta file to remove them from.')
+  parser.add_argument('--headers', required=True, help='file of headers to remove')
+  parser.add_argument('--input', required=True, help='file of fasta sequences')
+  parser.add_argument('--out', required=True, help='file of results')
+  args=parser.parse_args()
+  return args
 
 #print warning if not enough arguments
 if len(sys.argv) < 3: 
