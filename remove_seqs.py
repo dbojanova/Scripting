@@ -22,14 +22,10 @@ headers = set(line.strip() for line in open(args.headers))
 
 #parse through all the sequences and remove any with a header matching the inputted headers to be removed
 for seqs in SeqIO.parse(args.input, "fasta"):
+  headers.remove(seqs.name)
   if seqs.id not in headers:
     SeqIO.write(seqs, args.out, "fasta")
-  try:
-      headers.remove(seqs.name)
-  except KeyError:
-      print(seqs.format("fasta"))
-      continue
-
+  
 #report any headers that were not found in the fasta file and therefore not removed
 if len(headers) != 0:
   print(len(headers),'of the headers were not in the fasta file.', file=sys.stderr)
